@@ -1,0 +1,8 @@
+{
+    "name": "hectorvent/test",
+    "description": "Test",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "monolog/monolog": "^2.0"
+    }
+}

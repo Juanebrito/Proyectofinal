@@ -1,0 +1,85 @@
+<html>
+
+<head>
+        <link rel="stylesheet" href="/views/recursos/bootstrap/css/bootstrap.css"></style>
+        <script src="../resources/js/estudiante.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">ITLA</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../views/estudiante.html">Estudiante</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../views/carrera.html">Carreras</a>
+                    </li>
+                    <li class="nav-item active">
+                            <li class="nav-item">
+                                    <a class="nav-link" href="../views/materia.html">Materias</a>
+                                </li>
+                       
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="row" style="padding-top: 30px;">
+
+            <div class="col-4">
+                <h3 style="padding-bottom: 10px;">Registro Estudiante</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" aria-describedby="nombreAyuda"
+                            placeholder="Enter email">
+                        <small id="nombreAyuda" class="form-text text-muted">El nombre es requerido!</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="matricula">Matricula</label>
+                        <input type="text" class="form-control" id="matricula" placeholder="00">
+                    </div>
+                    <div class="form-group">
+                            <label for="eddad">Edad</label>
+                            <input type="number" class="form-control" id="edad" placeholder="00">
+                        </div>
+
+                    <button type="button" id="guardarestudiante" class="btn btn-primary">Guardar</button>
+                </form>
+
+            </div>
+
+            <div class="col-8">
+                <h3 style="padding-bottom: 10px;">Lista de Estudiante</h3>
+                <table class="table" id="tabla_estudiante">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">matricula</th>
+                            <th scope="col">Edad</th>
+                        </tr>
+                    </thead>
+                    <tbody id="list_estudiante">
+
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
